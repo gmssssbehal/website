@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo/logo-no-background.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="fallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+
+    <!-- about us -->
+
+
+    <section class="about">
+        <div class="row">
+            <div class="about-col">
+                <h3>
+                    “Welcome to GMSSSS Behal. We are dedicated to providing quality education and fostering the holistic development of our students. Our committed faculty, state-of-the-art facilities, and inclusive learning environment ensure that every child receives the
+                    best possible education. Together, we strive to create responsible citizens and future leaders. Join us on this exciting journey of learning, growth, and achievement!”
+                </h3>
+            </div>
+            <div class="about-col">
+                <img src="images/banner 3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+        <div class="row">
+            <div class="footer-col">
+                <i class="fa fa-map-marker"> <p>&nbsp;&nbsp;&nbsp;&nbsp;Loharu Road, Behal</p></i><br>
+            </div>
+            <div class="footer-col">
+                <i class="fa fa-phone-square"><p>&nbsp;&nbsp;&nbsp;&nbsp;+91-9992999678
+
+                </p></i><br>
+            </div>
+            <div class="footer-col">
+                <i class="fa fa-envelope">   <p>gsssbehal@gmail.com</p></i><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-col-2" id="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="fallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+            </div>
+            <div class="footer-col-2">
+                <ul>
+                    <li><a href="elearning.html">e-LEARNING</a></li>
+                    <li><a href="school-management-commitee">SMC</a></li>
+                    <li><a href="public-disclosure.html">PUBLIC DISCLOSURE</a></li>
+                    <li><a href="noc.html">NOC</a></li>
+                    <li><a href="affiliation">AFFILIATION</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2" id="social">
+                <ul>
+                    <li><a href="#social" style="text-decoration: underline; color: #f57970fa;">Social Media Links</a></li>
+                    <li>
+                        <a href="https://youtube.com/@gmssssbehal" target="_blank"><i class="fa fa-youtube-play" style="color: red;">&nbsp;</i>
+                            YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://m.facebook.com/profile.php?id=100077434393303&_rdr" target="_blank"><i class="fa fa-facebook-square" style="color: rgb(0, 140, 255);"></i>&nbsp;&nbsp;&nbsp;Facebook</a>
+                    </li>
+                    <li>
+                        <a href="mailto:gsssbehal@gmail.com" target="_blank"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;Mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            <i class="fa fa-copyright"></i> 2023 All Rights Reserved | GMSSSS Behal
+        </p>
+    </section>
+
+
+
+
+
+    <!-----javascript for Toggle Menu ------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

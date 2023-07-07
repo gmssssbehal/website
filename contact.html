@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img src="images/logo/logo-no-background.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="fallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- contact us -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d855.2178764744724!2d75.62249041192074!3d28.626921458128432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391300b4629e45ab%3A0x5d1af4eadab5a165!2sGovt.Senior%20Secondary%20School%20Boys%20%2CBahal!5e1!3m2!1sen!2sin!4v1687676421159!5m2!1sen!2sin"
+            width="600" height="450" style="border:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                    <h5>
+                        Loharu Road, Behal
+                    </h5>
+                    <p>&nbsp;&nbsp;Bhiwani, Haryana</p>
+                </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                    <h5>
+                        +91-9992999678
+
+
+                    </h5>
+                    <p>&nbsp;&nbsp;Monday to Saturday ; 9 A.M. to 5 P.M.</p>
+                </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                    <h5>
+                        gsssbehal@gmail.com
+                    </h5>
+                    <p>&nbsp;&nbsp;Email Us Your Query</p>
+                </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" id="" rows="8" placeholder="Message" required></textarea>
+
+                    <button type="submit" class="submit-btn red-btn">
+                        Send Message
+                    </button>
+                </form>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="row">
+            <div class="footer-col-2" id="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="fallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+            </div>
+            <div class="footer-col-2">
+                <ul>
+                    <li><a href="elearning.html">e-LEARNING</a></li>
+                    <li><a href="school-management-commitee">SMC</a></li>
+                    <li><a href="public-disclosure.html">PUBLIC DISCLOSURE</a></li>
+                    <li><a href="noc.html">NOC</a></li>
+                    <li><a href="affiliation">AFFILIATION</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2" id="social">
+                <ul>
+                    <li><a href="#social" style="text-decoration: underline; color: #f57970fa;">Social Media Links</a></li>
+                    <li>
+                        <a href="https://youtube.com/@gmssssbehal" target="_blank"><i class="fa fa-youtube-play" style="color: red;">&nbsp;</i>
+                            YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://m.facebook.com/profile.php?id=100077434393303&_rdr" target="_blank"><i class="fa fa-facebook-square" style="color: rgb(0, 140, 255);"></i>&nbsp;&nbsp;&nbsp;Facebook</a>
+                    </li>
+                    <li>
+                        <a href="mailto:gsssbehal@gmail.com" target="_blank"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;Mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            <i class="fa fa-copyright"></i> 2023 All Rights Reserved | GMSSSS Behal
+        </p>
+    </section>
+
+
+
+
+
+    <!-----javascript for Toggle Menu ------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

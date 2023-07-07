@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo/logo-no-background.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="fallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box"><br><br>
+            <h1>Admission Form for 2023-24</h1>
+        </div>
+    </section>
+
+
+
+    <!--Admission Form-->
+
+
+    <section class="admission-form">
+        <form action="" method="post">
+            <div class="form-line">
+                <label>Name *</label>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="form-line">
+                <label>Father's Name *</label>
+                <input type="text" name="father-name" required>
+            </div>
+
+            <div class="form-line">
+                <label>Mother's Name *</label>
+                <input type="text" name="mother-name" required>
+            </div>
+
+            <div class="form-line">
+                <label>Date of Birth *</label>
+                <input type="date" name="dob" required>
+            </div>
+
+            <div class="form-line">
+                <label>Gender *</label>
+                <select name="gender" id="" required>
+                    <option value="" disabled selected>Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+
+                </select>
+            </div>
+
+            <div class="form-line">
+                <label>Admission sought in Grade *</label>
+                <select name="grade" id="" required>
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th - Arts">11th - Arts</option>
+                    <option value="11th - Commerce">11th - Commerce</option>
+                    <option value="11th - Medical">11th - Medical</option>
+                    <option value="11th - Non-Medical">11th - Non-Medical</option>
+                    <option value="12th - Arts">12th - Arts</option>
+                    <option value="12th - Commerce">12th - Commerce</option>
+                    <option value="12th - Medical">12th - Medical</option>
+                    <option value="12th - Non-Medical">12th - Non-Medical</option>
+                </select>
+            </div>
+
+            <div class="form-line">
+                <label>Mobile Number *</label>
+                <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="e.g. - 9999999999">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputState">State *</label>
+                <select class="form-control" id="inputState" required>
+                                    <option value="SelectState" disabled selected>Select State</option>
+                                    <option value="Andra Pradesh">Andra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madya Pradesh">Madya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Orissa">Orissa</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttaranchal">Uttaranchal</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadeep">Lakshadeep</option>
+                                    <option value="Pondicherry">Pondicherry</option>
+                                  </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputDistrict">District *</label>
+                <select class="form-control" id="inputDistrict" required>
+                    <option value="" disabled selected>-- select one -- </option>
+                </select>
+            </div>
+
+            <div class="form-line">
+                <label>Category</label>
+                <select name="category" id="">
+                    <option value="" disabled selected>Select your Category</option>
+                    <option value="General">General</option>
+                    <option value="BC - A">BC - A</option>
+                    <option value="BC - B">BC - B</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                </select>
+            </div>
+            <div class="form-line">
+                <input type="checkbox" name="" id="" required class="checkbox"> <label class="checkbox">I do hereby solemnly declare and affirm that the detailed filled by me are correct to my knowledge and belief.</label>
+            </div>
+
+            <div class="submit">
+                <button type="submit" class="sub-btn">Submit</button>
+            </div>
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <section class="footer ">
+        <p>
+            <i class="fa fa-copyright "></i> 2023 All Rights Reserved | GMSSSS Behal
+        </p>
+    </section>
+
+
+
+
+
+    <!-----javascript for Toggle Menu ------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks ");
+
+        function showMenu() {
+            navLinks.style.right = "0 ";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px ";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+    <script src="address.js"></script>
+
+</body>
+
+</html>
